@@ -1,0 +1,1 @@
+copy *.py C:\Tools\Burp\jython_libs\hello_world
