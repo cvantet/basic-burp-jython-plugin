@@ -73,7 +73,7 @@ class BurpExtender(IBurpExtender, IProxyListener):
     def registerExtenderCallbacks(self, callbacks):
         self.callbacks = callbacks
         self.helpers = callbacks.getHelpers()
-        self.callbacks.setExtensionName('HelloWorldBurpTabExtender')
+        self.callbacks.setExtensionName('HelloWorldBurpProxyListenerExtender')
         self.callbacks.registerProxyListener(self)
         
     def processProxyMessage(self, messageIsRequest, message):

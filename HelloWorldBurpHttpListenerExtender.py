@@ -77,7 +77,7 @@ class BurpExtender(IBurpExtender, IHttpListener):
     def registerExtenderCallbacks(self, callbacks):
         self.callbacks = callbacks
         self.helpers = callbacks.getHelpers()
-        self.callbacks.setExtensionName('HelloWorldBurpTabExtender')
+        self.callbacks.setExtensionName('HelloWorldBurpHttpListenerExtender')
         self.callbacks.registerHttpListener(self)
         
     def processHttpMessage(self, toolflag, messageIsRequest, messageInfo):
